@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+    <style>
+        * {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: #151515;
+        }
+
+        .main-container{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .container-1{
+            margin-top: 3%;
+            width: 60%;
+            height: 500px;
+        }
+
+        .container-2{
+            width: 35%;
+            background-color: black;
+            margin-top: 3%;
+            color: white;
+            border: 1px solid gray;
+        }
+
+        form{
+            background-color: #000000;
+            width: 100%;
+            height: 460px;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+
+        }
+
+        .input-box{
+            width: 98%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .input-1,
+        .input-2,
+        .remember {
+         width: 90%;
+         height: 40px;
+         border: 1px solid gray;
+         background-color: #000000;
+         color: white;
+        }
+
+        .remember{
+            padding-top: 15px;
+            width: 90%;
+            height: 35px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            background-color: #2f2f2f;
+            color: gray;
+        }
+
+        .header{
+            margin-bottom: 15px;
+        }
+
+        p{
+            color: gray;
+        }
+
+        .login-box{
+            width: 90%;
+            height: 60px;
+        }
+
+        .login{
+            width: 230px;
+            height: 50px;
+            margin-top: 40px;
+            margin-right: 40px;
+            background-color: #2f2f2f;
+            border-radius: 7px;
+            border: none;
+            color: white;
+        }
+
+        a{
+            color: orange;
+            text-decoration: none;
+            font-weight:700;
+        }
+
+        input{
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .logo{
+            color: white;
+            font-size: 50px;
+        }
+
+        .logo2{
+            margin-left: 10px;
+            background-color: #ff9000;
+            padding: 10px;
+            font-size: 40px;
+            border-radius: 7px;
+            color: #000000;
+        }
+
+        .there{
+            margin-left: 30px;
+            font-size: 60px;
+            color: white;
+        }
+
+
+  </style>
+
+<body>
+<div class="main-container">
+    <div class="container-1">
+    <h1 class="logo"><span class="logo1">Wes</span><span class="logo2">Hub</span></h1>
+
+    <h1 class="there">THERE'S A LOT <br> MORE TO WESHUB <br>
+    THAN YOU THINK!</h1>
+     </div>
+     <div class="container-2">
+     <form id="form" action="homepage.html" method="get">
+    <div class="header">
+        <h1 style="text-align: center;">Member Sign In</h1>
+        <p>Access your Weshub or Weshub Premium</p>
+    </div>
+    <div class="input-box">
+        <input type="text" id="text" placeholder="Username" class="input-1">
+        </div>
+    <div class="input-box">
+        <input type="password" id="password" placeholder="Password" class="input-2">
+    </div>
+    <div class="remember">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox"> Remember Me on this Computer</label>
+        </div>
+    <div class="login-box">
+        <input type="submit" value="Log in" class="login">Or<a href="#">Sign Up</a>
+    </div>
+     </form>
+     </div>
+    </div>
+    <script>
+        const email = document.getElementById('username')
+        const password = document.getElementById('password')
+        const form = document.getElementById('form')
+    
+        form.addEventListener('submit', (e) => {
+          let messages = []
+          if (password.value !== 'wesley123') {
+          alert("invalid password!");
+          e.preventDefault()
+          errorElement.innerText = messages.join(', ')
+        }
+    
+          if (email.value !== 'wesley') {
+          alert("invalid username!");
+          e.preventDefault()
+          errorElement.innerText = messages.join(', ')
+        }
+        })
+      </script>
+    </script>
+
+    
+</body>
+</html>
